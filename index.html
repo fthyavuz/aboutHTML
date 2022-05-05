@@ -1,134 +1,123 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>about-HTML</title>
+        <link rel="stylesheet" href="style.css">
+        <title>HTML-CSS-JS</title>
         <style>
-            table {
-              font-family: arial, sans-serif;
-              border-collapse: collapse;
-              width: 100%;
+            #images{
+                padding:20px 30px;
             }
-            
-            td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 8px;
+
+            #html-image{
+                width: 600px;
+                height: 500px;
             }
-            
-            tr:nth-child(even) {
-              background-color: #dddddd;
+
+            #css-image{
+                width: 600px;
+                height: 500px;
             }
-            </style>
+
+            #js-image{
+                width: 600px;
+                height: 500px;
+            }
+            #subscribe-form{
+                border: solid;
+                margin: 10px;
+                padding: 10px; 
+                max-width: 500px;
+                font-size: 20px;
+            }
+        </style>
     </head>
 
     <body>
-        <h1>HTML</h1>
-        <img src="html-basic.png" alt="HTML-image">
-        <p>image-source : https://gvtechnolab.in/html-introduction/ </p>
-        <h3>In this web page, you can find some information abaout HTML </h3>
-        <br>
-        <h5>What is HTML</h5>
-        <ul>
-            <li>HTML stands for "Hyper Text Markup Language"</li>
-            <li>HTML is not a programming language</li>
-            <li>HTML is used for define the content and layout of website</li>
-        </ul>
-        <br>
-        <p>You can find more tutorial below links</p>
-        <ol>
-            <li><a href="https://www.w3schools.com/html/">w3Schools</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Getting Started HTML</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a></li>
-            <li><a href="https://html.com/">HTML for Beginners</a></li>
-        </ol>
+        <div class="header">
+            <a href="./index.html" id="home"><span>Home</span></a>
+            <h1 id="header-title">
+                <a href="./pages/html.html" class="header-anchor">
+                    <span>HTML</span>
+                </a>
+                <a href="./pages/css.html" class="header-anchor">
+                    <span>CSS</span>
+                </a>
+                <a href="./pages/javascript.html" class="header-anchor">
+                    <span>JS</span>
+                </a>
+            </h1>
+            <div id="page-mode">
+                <label for="page-mode">Dark Mode</label>
+                <input type="checkbox" name="page-mode" style="width: 20px; height: 20px;">
+            </div>
+        </div>
 
-        <br>
-        <p>Some HTML tag and purposes of usage is below</p>
+        <div class="main">
+            <h1 class="first-title">In this page, you can find HTML, CSS or JavaScript tutorial.</h3>
+            <h3 class="second-title">Select one thema among HTML CSS JS</h3>
+            <div id="images">
+                <a href="./pages/html.html"><img id="html-image" src="./img/html-image.png" alt="HTML-image"></a>
+                <a href="./pages/css.html"><img id="css-image" src="./img/css-image.png" alt="CSS-image"></a>
+                <a href="./pages/javascript.html"><img id="js-image" src="./img/js-image.png" alt="JS-image"></a>
+            </div>
 
-        <table style="max-width: 700px;">
-            <thead>
-                <tr>
-                    <th>Tag</th>
-                    <th>Describe</th>
-                </tr>
-            </thead> 
-            <tbody>
-                <tr>
-                    <td>DOCTYPE</td>
-                    <td>declaration is an "information" to the browser</td>
-                </tr>
-                <tr>
-                    <td>html</td>
-                    <td>container of all HTML elements.</td>
-                </tr>
-                <tr>
-                    <td>head</td>
-                    <td>For metadata</td>
-                </tr>
-                <tr>
-                    <td>body</td>
-                    <td>All main  content is goes between body tag</td>
-                </tr>
+           
+            <h3 class="tut-title">If you want to subscribe for last new tutorial, you can fill the form and click submit button</h3>
+            <form id="subscribe-form">
+                <label for="name">Name: </label>
+                <input type="text" name="name">
                 <br>
-
-            </tbody>
-        </table>
-        <br>
-        <video width="500" height="350" controls>
-            <source src="html-tut.mp4" type="video/mp4">
-        </video> <br>
-
-        <a href="https://www.youtube.com/watch?v=salY_Sm6mv4">Source: Youtube</a>
-
-        <br>
-        <p>If you want to subscribe for last new tutorial, you can fill the form and click submit button</p>
-        <form style="border: solid; margin: 10px; padding: 10px; max-width: 500px;",>
-            <label for="name">Name: </label>
-            <input type="text" name="name">
-            <br>
-            <br>
-            <label for="email">Email: </label>
-            <input type="text" name="email">
-            <br>
-            <br>
-            <p>Please select your education level:</p>
-            <input type="radio" id="ed0" name="education" value="Any">
-            <label for="ed0">Any</label><br>
-            <input type="radio" id="ed1" name="education" value="Bsc">
-            <label for="ed1">Bsc</label><br>
-            <input type="radio" id="ed2" name="education" value="Msc">
-            <label for="ed2">Msc</label><br>  
-            <input type="radio" id="ed3" name="education" value="Phd">
-            <label for="ed3">Phd</label><br><br>
-
-            <label for="language">Choose your favorite programming language:</label>
-            <br>
-            <br>
-            <select name="Programming Language">
-            <option value="javaScript">JavaScript</option>
-            <option value="python">Python</option>
-            <option value="c-sharp">C#</option>
-            <option value="java">Java</option>
-            </select>
-            <br>
-            <br>
-            <label for="birthdaytime">Birthday:</label><br><br>
-            <input type="date" name="birthday">
-            <br>
-            <br>
-
-            <label for="username">Username </label>
-            <input type="text" name="username">
-            <br>
-            <br>
-            <label for="password">Password: </label>
-            <input type="password" name="password">
-            <br>
-            <br>
-            <label for="comment">Comment</label><br>
-            <textarea name="comment" cols="30" rows="10">I think </textarea><br>
-
-            <input type="submit" value="Submit">
-        </form>
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" name="email">
+                <br>
+                <br>
+                <p>Please select your education level:</p>
+                <input type="radio" id="ed0" name="education" value="Any">
+                <label for="ed0">Any</label><br>
+                <input type="radio" id="ed1" name="education" value="Bsc">
+                <label for="ed1">Bsc</label><br>
+                <input type="radio" id="ed2" name="education" value="Msc">
+                <label for="ed2">Msc</label><br>  
+                <input type="radio" id="ed3" name="education" value="Phd">
+                <label for="ed3">Phd</label><br><br>
+    
+                <label for="language">Choose your favorite programming language:</label>
+                <br>
+                <br>
+                <select name="Programming Language">
+                <option value="javaScript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c-sharp">C#</option>
+                <option value="java">Java</option>
+                </select>
+                <br>
+                <br>
+                <label for="birthdaytime">Birthday:</label><br><br>
+                <input type="date" name="birthday">
+                <br>
+                <br>
+    
+                <label for="username">Username </label>
+                <input type="text" name="username">
+                <br>
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" name="password">
+                <br>
+                <br>
+                <label for="comment">Comment</label><br>
+                <textarea name="comment" cols="30" rows="10">I think </textarea><br>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="footer">
+            <p id="describeOfFooter">
+                This page gives you about some information HTML, CSS and JavaScript. 
+                The purpose of creating this page is to learn some HTML, CSS and javaScript.  
+            </p>
+            <h3 id="copyright">This page created by @Yavuz</h3>
+        </div>
     </body>
 </html>

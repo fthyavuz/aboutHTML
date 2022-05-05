@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+/****  Header  ****/
+
+.header {
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid green;
+    display: flex;
+    top: 0cm;
+}
+
+.header-anchor{
+    text-decoration: none;
+    font-size: 60px;
+}
+
+.header-anchor:hover{
+    background-color: chocolate;
+    border-radius: 20px;
+}
+#header-title{
+    text-align: center;
+    font-size: 60px;
+    width: 50%;
+}
+
+#page-mode{
+    text-align: right;
+    width: 300px;
+    font-size: 30px;
+    margin:auto;
+    
+}
+
+#home{
+    text-align: center;
+    font-size: 40px;
+    margin:auto;
+    padding:0px;
+    color: white;
+}
+
+/****  Main***  */
+
+.main{
+    border: none;
+}
+
+.first-title{
+    font-style: italic;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.second-title{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tut-title{
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+}
+
+.tut-list{
+    font-size: 25px;
+
+}
+
+li{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.tut-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+th {
+    border: 1px solid green;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid green;
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: navy;
+}
+
+.tut-video{
+    border: 5px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: white;
+    font-size: 25px;
+}
+
+/****  Footer  ****/
+
+.footer {
+    border: 5px solid green;
+    bottom: 0cm;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    top: 0cm;
+}
+
+
+
+
+
+
+
