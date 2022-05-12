@@ -2,122 +2,62 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>HTML-CSS-JS</title>
-        <style>
-            #images{
-                padding:20px 30px;
-            }
-
-            #html-image{
-                width: 600px;
-                height: 500px;
-            }
-
-            #css-image{
-                width: 600px;
-                height: 500px;
-            }
-
-            #js-image{
-                width: 600px;
-                height: 500px;
-            }
-            #subscribe-form{
-                border: solid;
-                margin: 10px;
-                padding: 10px; 
-                max-width: 500px;
-                font-size: 20px;
-            }
-        </style>
     </head>
 
     <body>
-        <div class="header">
-            <a href="./index.html" id="home"><span>Home</span></a>
-            <h1 id="header-title">
-                <a href="./pages/html.html" class="header-anchor">
-                    <span>HTML</span>
-                </a>
-                <a href="./pages/css.html" class="header-anchor">
-                    <span>CSS</span>
-                </a>
-                <a href="./pages/javascript.html" class="header-anchor">
-                    <span>JS</span>
-                </a>
-            </h1>
-            <div id="page-mode">
-                <label for="page-mode">Dark Mode</label>
-                <input type="checkbox" name="page-mode" style="width: 20px; height: 20px;">
-            </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="./index.html" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">home</i></a></li>
+                <li><a href="./pages/html.html">HTML</a></li>
+                <li><a href="./pages/css.html">CSS</a></li>
+                <li><a href="./pages/javascript.html">JS</a></li>
+                <li style="float: right;"><a href="#" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">login</i></a></li>  
+            </ul> 
         </div>
 
         <div class="main">
-            <h1 class="first-title">In this page, you can find HTML, CSS or JavaScript tutorial.</h3>
-            <h3 class="second-title">Select one thema among HTML CSS JS</h3>
-            <div id="images">
-                <a href="./pages/html.html"><img id="html-image" src="./img/html-image.png" alt="HTML-image"></a>
-                <a href="./pages/css.html"><img id="css-image" src="./img/css-image.png" alt="CSS-image"></a>
-                <a href="./pages/javascript.html"><img id="js-image" src="./img/js-image.png" alt="JS-image"></a>
+            <div class="search-part">
+                <h1>Learn HTML CSS JS</h1>
+                <h3>Search Tutorial</h3>
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Search Tutorial">
+                <button>Search</button>
+                <p>If you want more tutorial, you can visit</p>
+                <p><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
             </div>
 
-           
-            <h3 class="tut-title">If you want to subscribe for last new tutorial, you can fill the form and click submit button</h3>
-            <form id="subscribe-form">
-                <label for="name">Name: </label>
-                <input type="text" name="name">
-                <br>
-                <br>
-                <label for="email">Email: </label>
-                <input type="text" name="email">
-                <br>
-                <br>
-                <p>Please select your education level:</p>
-                <input type="radio" id="ed0" name="education" value="Any">
-                <label for="ed0">Any</label><br>
-                <input type="radio" id="ed1" name="education" value="Bsc">
-                <label for="ed1">Bsc</label><br>
-                <input type="radio" id="ed2" name="education" value="Msc">
-                <label for="ed2">Msc</label><br>  
-                <input type="radio" id="ed3" name="education" value="Phd">
-                <label for="ed3">Phd</label><br><br>
-    
-                <label for="language">Choose your favorite programming language:</label>
-                <br>
-                <br>
-                <select name="Programming Language">
-                <option value="javaScript">JavaScript</option>
-                <option value="python">Python</option>
-                <option value="c-sharp">C#</option>
-                <option value="java">Java</option>
-                </select>
-                <br>
-                <br>
-                <label for="birthdaytime">Birthday:</label><br><br>
-                <input type="date" name="birthday">
-                <br>
-                <br>
-    
-                <label for="username">Username </label>
-                <input type="text" name="username">
-                <br>
-                <br>
-                <label for="password">Password: </label>
-                <input type="password" name="password">
-                <br>
-                <br>
-                <label for="comment">Comment</label><br>
-                <textarea name="comment" cols="30" rows="10">I think </textarea><br>
-    
-                <input type="submit" value="Submit">
-            </form>
+            <div class="tut-part" id="html-part">
+                <h1 class="element-main" style="display: inline;">HTML</h1>
+                <img id="main-image" src="./img/img-html.png" alt="image of HTML" style="display:inline;">
+                <p class="element-main">The language for building web pages</p>
+                <a href="./pages/html.html" class="element-main"><button>Learn HTML</button></a>   
+            </div> 
+
+            <div class="tut-part" id="css-part">
+                <h1 class="element-main" style="display: inline;">CSS</h1>
+                <img id="main-image" src="./img/img-css.png" alt="image of CSS" style="display:inline;">
+                <p class="element-main">The language for styling web pages</p>
+                <a href="./pages/css.html" class="element-main"><button>Learn CSS</button></a> 
+            </div>
+
+            <div class="tut-part" id="js-part">
+                <h1 class="element-main" style="display: inline;">JS</h1>
+                <img id="main-image" src="./img/img-js.png" alt="image of JS" style="display:inline;">
+                <p class="element-main">The language for programming web pages</p>
+                <a href="./pages/javascript.html" class="element-main"><button>Learn JS</button></a> 
+            </div>
+
         </div>
+
         <div class="footer">
-            <p id="describeOfFooter">
+            <p>
                 This page gives you about some information HTML, CSS and JavaScript. 
                 The purpose of creating this page is to learn some HTML, CSS and javaScript.  
             </p>
             <h3 id="copyright">This page created by @Yavuz</h3>
+            <span><a href="#" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">facebook</i></a></span>
         </div>
     </body>
 </html>
