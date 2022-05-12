@@ -6,10 +6,12 @@ body{
 /****  nav-bar  ****/
 
 .nav-bar {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 2px solid green;
     margin: 20px;
+    position: sticky;
+    top: 10px;
 }
 
 
@@ -91,6 +93,8 @@ body{
     font-style: italic;
 }
 
+
+
 .search-part a{
     color: green;
     text-decoration: none;
@@ -126,6 +130,10 @@ body{
 .tut-part > p {
     font-size: 50px;
     margin-left: 100px;
+}
+
+.tut-part > p::first-letter{
+    font-size: 200%;
 }
 
 .tut-part button {
