@@ -1,6 +1,13 @@
 body{
-    background-color: black;
-    color: white;
+    /* Default settings*/
+    background-color: white;
+    color: black;
+}
+
+a{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 /****  nav-bar  ****/
@@ -12,6 +19,7 @@ body{
     margin: 20px;
     position: sticky;
     top: 10px;
+    
 }
 
 
@@ -29,7 +37,6 @@ body{
 
 .nav-bar a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,9 +51,17 @@ body{
 
 .icon-nav-bar > i {
     font-size: 35px;
+    cursor: pointer;
 }
 
-/* main*/
+#clock{
+    background-color: green;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* index main*/
 
 .search-part {
     border-bottom:2px solid green ;
@@ -93,15 +108,12 @@ body{
     font-style: italic;
 }
 
-
-
 .search-part a{
     color: green;
     text-decoration: none;
 }
 
 .search-part a:hover{
-    color: white;
     text-decoration:underline;
 }
 
@@ -156,7 +168,6 @@ body{
     
 }
 
-
 .tut-part img{
     border: 5px solid green;
     float: right; 
@@ -166,101 +177,6 @@ body{
     margin-top:20px ;
     margin-right: 20px;
 
-}
-
-/* main tutorials*/
-.main{
-    border: none;
-}
-
-.first-title{
-    font-style: italic;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.second-title{
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.tut-title{
-    text-align: left;
-    padding-top: 5px;
-    padding-bottom: 5px;    
-}
-
-.tut-list{
-    font-size: 25px;
-
-}
-
-li{
-    padding-top:5px;
-    padding-bottom:5px;
-}
-
-.tut-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    }
-    
-th {
-    border: 1px solid green;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
-
-td {
-    border: 1px solid green;
-    text-align: left;
-    padding: 15px;
-}
-
-tr:nth-child(even) {
-    background-color: navy;
-}
-
-.tut-video{
-    border: 5px solid white;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-a{
-    color: white;
-    font-size: 25px;
-}
-
-#images{
-    padding:20px 30px;
-}
-
-#html-image{
-    width: 600px;
-    height: 500px;
-}
-
-#css-image{
-    width: 600px;
-    height: 500px;
-}
-
-#js-image{
-    width: 600px;
-    height: 500px;
-}
-#subscribe-form{
-    border: solid;
-    margin: 10px;
-    padding: 10px; 
-    max-width: 500px;
-    font-size: 20px;
 }
 
 /* footer*/

@@ -6,14 +6,17 @@
         <title>HTML-CSS-JS</title>
     </head>
 
-    <body>
+    <body onload="startTime()">
         <div class="nav-bar">
             <ul>
-                <li><a href="./index.html" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">home</i></a></li>
+                <li><a href="./index.html" class="icon-nav-bar"><i class="material-icons">home</i></a></li>
                 <li><a href="./pages/html.html">HTML</a></li>
                 <li><a href="./pages/css.html">CSS</a></li>
                 <li><a href="./pages/javascript.html">JS</a></li>
-                <li style="float: right;"><a href="#" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">login</i></a></li>  
+                <li style="float: right;"><a href="./pages/login.html" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">login</i></a></li>
+                <li style="float: right;"><a onclick="darkMode()" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">bedtime</i></a></li>
+                <li style="float: right;"><a onclick="brightMode()" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">sunny</i></a></li>
+                <li style="float: right;"><span id="clock"></span></li>
             </ul> 
         </div>
 
@@ -59,5 +62,6 @@
             <h3 id="copyright">This page created by @Yavuz</h3>
             <span><a href="#" class="icon-nav-bar"><i class="material-icons" style="font-size: 35px;">facebook</i></a></span>
         </div>
+        <script src="./index.js"></script>
     </body>
 </html>

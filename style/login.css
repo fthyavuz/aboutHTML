@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    margin: 20px;   
+}
+form{
+    border: 2px solid green;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 10px;
+
+    
+}
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:orange;
+    color: white;
+}
+
+.img-container {
+    text-align: center;
+    padding: 10px 0px;
+    
+}
+
+.img-container > img {
+    border-radius: 50%;
+}
+
+.input-container {
+    padding: 10px 0px;
+
+}
+
+.input-container > input[type=text], input[type=password] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.input-container > label{
+    padding: 20px 0 ;
+    margin: 8px 20px;
+    font-size: 20px;
+
+}
+
+.input-container > button {
+    display: block;
+    width: 540px;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    font-size: 18px;
+
+}
+
+.cancel-container{
+    padding: 10px 0px;
+    
+}
+
+.cancel-container > button {
+    display: inline;
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    font-size: 18px;
+}
+
+.cancel-container > span {
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    margin-top:20px;
+    font-size: 18px;
+}
+
+.cancel-container > span > a:hover{
+    cursor: pointer;
+    font-style: italic;
+}
